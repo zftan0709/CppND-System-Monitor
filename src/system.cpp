@@ -17,7 +17,16 @@ using std::vector;
 Processor& System::Cpu() { return cpu_; }
 
 // TODO: Return a container composed of the system's processes
-vector<Process>& System::Processes() { return processes_; }
+vector<Process>& System::Processes() {
+    processes_.clear();
+    std::vector<int> pid_ids = LinuxParser::Pids();
+    for(int id:pid_ids){
+        Process tmp(id);
+        processes_.push_back(tmp);
+    }
+    std::sort(processes_.begin(),processes_.end());
+    return processes_;
+}
 
 // TODO: Return the system's kernel identifier (string)
 std::string System::Kernel() {
@@ -35,7 +44,9 @@ std::string System::OperatingSystem() {
 }
 
 // TODO: Return the number of processes actively running on the system
-int System::RunningProcesses() { return 0; }
+int System::RunningProcesses() {
+    return LinuxParser::RunningProcesses();
+}
 
 // TODO: Return the total number of processes on the system
 int System::TotalProcesses() {
