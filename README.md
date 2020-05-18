@@ -11,7 +11,8 @@ In this project, a simple system monitor is built to display system information 
 
 ## Instruction
 ### Dependencies
-This project requires the installation of [ncurses], a library that facilitates text-based graphical output in the terminal. It is used for displaying the final output in the terminal in this project.
+* [ncurses](https://www.gnu.org/software/ncurses/)
+  * ncurses is a library that facilitates text-based graphical output in the terminal. It is used for displaying the final output in the terminal in this project.
 `sudo apt install libncurses5-dev libncursesw5-dev`
 
 ### Make
