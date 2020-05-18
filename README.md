@@ -2,7 +2,7 @@
 ---
 
 ## Introduction
-_**Note:** This project makes use of [Udacity System Monitor Project Repository](https://www.udacity.com/course/c-plus-plus-nanodegree--nd213).
+_**Note:** This project makes use of [Udacity System Monitor Project Repository](https://www.udacity.com/course/c-plus-plus-nanodegree--nd213)._
 
 In this project, a simple system monitor is built to display system information such as memory utilization, running processes, system runtime, etc. similar to a task manager on Window. The final output of this project is shown as the figure below.
 
@@ -10,7 +10,7 @@ In this project, a simple system monitor is built to display system information 
 
 
 ## Instruction
---
+---
 ### Dependencies
 This project requires the installation of [ncurses], a library that facilitates text-based graphical output in the terminal. It is used for displaying the final output in the terminal in this project.
 `sudo apt install libncurses5-dev libncursesw5-dev`
@@ -22,7 +22,7 @@ This project uses [Make](https://www.gnu.org/software/make/). The Makefile has f
 * `debug` compiles the source code and generates an executable, including debugging symbols
 * `clean` deletes the `build/` directory, including all of the build artifacts
 
-## Instructions
+### Run the code
 
 1. Clone the project repository: `git clone https://github.com/zftan0709/CppND-System-Monitor-Project-Updated.git`
 
