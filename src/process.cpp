@@ -18,26 +18,25 @@ Process::Process(int id){
     cpuUtil_ = LinuxParser::CpuUtilization(id);
     user_ = LinuxParser::User(id);
 }
-// TODO: Return this process's ID
+// Return this process's ID
 int Process::Pid() { return id_; }
 
-// TODO: Return this process's CPU utilization
+// Return this process's CPU utilization
 float Process::CpuUtilization() { return cpuUtil_; }
 
-// TODO: Return the command that generated this process
+// Return the command that generated this process
 string Process::Command() { return command_; }
 
-// TODO: Return this process's memory utilization
+// Return this process's memory utilization
 string Process::Ram() { return std::to_string(ram_); }
 
-// TODO: Return the user (name) that generated this process
+// Return the user (name) that generated this process
 string Process::User() { return user_; }
 
-// TODO: Return the age of this process (in seconds)
+// Return the age of this process (in seconds)
 long int Process::UpTime() { return upTime_; }
 
-// TODO: Overload the "less than" comparison operator for Process objects
-// REMOVE: [[maybe_unused]] once you define the function
-bool Process::operator<(Process const& a[[maybe_unused]]) const {
+// Overload the "less than" comparison operator for Process objects
+bool Process::operator<(Process const& a) const {
     return this->cpuUtil_ > a.cpuUtil_ ? true:false;
 }

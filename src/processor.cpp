@@ -1,6 +1,6 @@
 #include "processor.h"
 using namespace LinuxParser;
-// TODO: Return the aggregate CPU utilization
+// Return the aggregate CPU utilization
 float Processor::Utilization() {
     std::vector<float> cpuStat = CpuUtilization();
     float curActive = cpuStat[CPUStates::kUser_]+cpuStat[CPUStates::kNice_]+cpuStat[CPUStates::kSystem_]+

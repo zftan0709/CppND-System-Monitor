@@ -26,6 +26,7 @@ int TotalProcesses();
 int RunningProcesses();
 std::string OperatingSystem();
 std::string Kernel();
+std::vector<float> CpuUtilization();
 
 // CPU
 enum CPUStates {
@@ -40,11 +41,7 @@ enum CPUStates {
   kGuest_,
   kGuestNice_
 };
-std::vector<float> CpuUtilization();
-long Jiffies();
-long ActiveJiffies();
-long ActiveJiffies(int pid);
-long IdleJiffies();
+
 
 // Processes
 std::string Command(int pid);
@@ -53,6 +50,6 @@ std::string Uid(int pid);
 std::string User(int pid);
 long int UpTime(int pid);
 float CpuUtilization(int pid);
-};  // namespace LinuxParser
+}; 
 
 #endif
