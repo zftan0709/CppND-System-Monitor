@@ -2,7 +2,7 @@
 ---
 
 ## Introduction
-_**Note:** This project makes use of [Udacity System Monitor Project Repository](https://www.udacity.com/course/c-plus-plus-nanodegree--nd213)._
+_**Note:** This project makes use of [Udacity System Monitor Project Repository](https://github.com/udacity/CppND-System-Monitor)._
 
 In this project, a simple system monitor is built to display system information such as memory utilization, running processes, system runtime, etc. similar to a task manager on Window. The final output of this project is shown as the figure below.
 
